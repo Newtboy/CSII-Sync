@@ -21,7 +21,7 @@ def main(): # {
 
                 for line in inpf.readlines(): # {
                     found = re.search("From ", line)
-                    if (found):  # {
+                    if (found): # {
                         data = re.findall(emailRE + csvRE, line)
                         med = data[0].split()
                         if (med[4][0] == "0" and inp == "y"): # {
