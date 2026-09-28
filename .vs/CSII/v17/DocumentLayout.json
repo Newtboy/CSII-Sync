@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\GLaDOS_Backend_002\\Documents\\VSC\\CSII\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\GLaDOS_Backend_002\\Documents\\VSC\\CSII\\aa.swift||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:aa.swift||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "aa.swift",
+              "DocumentMoniker": "C:\\Users\\GLaDOS_Backend_002\\Documents\\VSC\\CSII\\aa.swift",
+              "RelativeDocumentMoniker": "aa.swift",
+              "ToolTip": "C:\\Users\\GLaDOS_Backend_002\\Documents\\VSC\\CSII\\aa.swift",
+              "RelativeToolTip": "aa.swift",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAIAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEsSURBVDhPY2SAgsry0vsMDP8VoFwsgPHBn38Mgd3d3RegAkDl//9DWSADSv7/\u002BvULJwbJNzXUvi8tLTWAagEDJihNFEhITBbg5ebYj2wI0QYICAgwTJ82heH79\u002B8CLEz/90OFEYCQF5AxSC1UG3YXfAu3w4qxAQwD0BWy6BhBWZhyIIAzDGAa/1w5x8DTOZeBkZsHzEcHOA0AaeRumsrAHp7MwMgvyMDq4AWVQQVYDYDbfvUcA7tbAAOTmCQDE9AQbACrATBns7n6MzAKioDFmKTlwDQ6wOmFr035DD/XL2H4uWYBw8cgS4Zfe7dAZVABhgFcKw\u002BB6f9fvzD82rqK4ceymWD\u002Bn3PHGbgW7wGzsQKqJiRSAFJ2LgZmZ0Y82RkZ/H/Q3tmryMDAwAAA3T/O5lmWRfQAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-09-24T17:32:36.922Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

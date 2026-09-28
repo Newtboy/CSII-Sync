@@ -1,56 +1,52 @@
 # package null.wizard.newtboy
 
 import csv
-import io
 import os
 from os.path import isfile
 import re
 
 
 def main(): # {
-    file = "" # my IDE would not shut up if I didn't add this
+    fileName = "" # my IDE would not shut up if I didn't add this
     while (True): # {
         try: # {
             fileName = input("Enter input filename: ").strip()
             fileName = fileName.strip()
             fileName = "files" + os.sep + fileName
-            if (not isfile(fileName)): # {
-                raise FileNotFoundError()
+            f = open(fileName, "r") # force crash if not exist
         # }
         except FileNotFoundError: # {
             print("File not found")
             continue
         # }
-        break
+        else: # {
+            f.close() # If it works, close it
+            break
+        # }
     # }
     outStr = input("Output file name: ").strip()
     outStr = "files" + os.sep + outStr
-    try: # {
-        if (isfile(outStr)):  # {
-            raise FileExistsError()
+    if (os.path.isfile(outStr)):  # {
+        inp = input("File exists. Overwrite? (y/n): ").strip().lower()
+        while (inp != "y" and inp != "n"): # {
+            inp = input("File exists. Overwrite? (y/n): ").strip().lower()
         # }
-        pass
-    # }
-    except FileExistsError: # {
-        inp = input("File exists. Overwrite? (y/n): ").lower()
-        if (inp[0] == "n"): # {
-            found = False
-            i = 0
-            while (not found): # {
-                i += 1
-                found = not isfile(f"{outStr[:-4]} ({i}).csv")
-                pass
+        if (inp[0] == "n"):  # {
+            inp1 = input("Enter file name: ")
+            while (isfile("files" + os.sep + inp1)):  #
+                print("File exists.")
+                inp1 = input("Enter file name: ")
+                continue
             # }
-            outStr = f"{outStr[:-4]} ({i}).csv"
+            outStr = "files" + os.sep + inp1
         # }
-        else: # {
+        elif (inp[0] == "y"):  # {
             outStr = f"{outStr}"
             pass
         # }
-        pass
     # }
 
-    emailRE = r"\S[a-z0-9A-Z\.]+@[\.A-Za-z0-9]+"
+    emailRE = r"\S[a-z0-9A-Z\.]+@[\.A-Za-z0-9]+\S"
 
     with open(fileName, "r") as f: # {
         with open(outStr, "w", newline="") as csvF: # {
@@ -90,7 +86,7 @@ def main(): # {
             if (numGroups == 0): # {
                 raise ZeroDivisionError("No Confidence values present!")
             avg = avg / numGroups
-            csvW.writerow(["", "Average", f"{avg: 0.4f}"])
+            csvW.writerow(["", "Average",f"{avg:.4f}"])
         # }
     # }
     print("Data stored!")
