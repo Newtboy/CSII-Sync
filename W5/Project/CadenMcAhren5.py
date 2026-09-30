@@ -11,7 +11,6 @@ def main(): # {
     while (True): # {
         try: # {
             fileName = input("Enter input filename: ").strip()
-            fileName = fileName.strip()
             fileName = "files" + os.sep + fileName
             f = open(fileName, "r") # force crash if not exist
         # }
@@ -31,17 +30,15 @@ def main(): # {
         while (inp != "y" and inp != "n"): # {
             inp = input("File exists. Overwrite? (y/n): ").strip().lower()
         # }
-        if (inp[0] == "n"):  # {
-            inp1 = input("Enter file name: ")
-            while (isfile("files" + os.sep + inp1)):  #
-                print("File exists.")
-                inp1 = input("Enter file name: ")
+        while (inp == "n"): # {
+            inp1 = input("Enter file name:").strip()
+            if (isfile("files" + os.sep + inp1)): # {
+                inp = input("File exists. Overwrite? (y/n): ")
                 continue
-            # }
-            outStr = "files" + os.sep + inp1
+            outStr = inp1
         # }
-        elif (inp[0] == "y"):  # {
-            outStr = f"{outStr}"
+        if (inp == "y"):  # {
+            # No need to change outstr
             pass
         # }
     # }
