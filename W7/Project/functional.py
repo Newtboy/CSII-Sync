@@ -16,7 +16,7 @@ def alien_ears_helper(n, even: bool): # {
     if (n == 1): # {
         return 2+int(not even);
     # }
-    return (alien_ears_helper(n-1, not even)+2+int(not even))
+    return (alien_ears_helper(n-1, not even)+ 2+int(not even))
 # }
 
 """
